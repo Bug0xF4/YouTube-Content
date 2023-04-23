@@ -6,19 +6,19 @@
  </head>
   <body>
   <font size="1"><a href="xss.php"><b><u>GO BACK TO MAIN PAGE</u></b></a></font>
-    <center><h1><u>Basic backend admin panel (staff only):</u></h1></center>
+  <center><h1><u>Basic backend admin panel (staff only):</u></h1></center>
   
     <?php
-	error_reporting(0);
+    error_reporting(0);
     $admin = "<hr><h3>Administrative Staff Panel:</h3>";
     echo $admin;
     echo "<hr>";
     echo "<br />";
-	echo "<p>Recent user reviews:</p><br />";
+    echo "<p>Recent user reviews:</p><br />";
     session_start();
     echo $_SESSION['reviewz'];
     ?>
-  
+	  
    	<br /><br /><br />
    	<hr>
 	<h3>Basic DOM XSS example scenario:</h3>
